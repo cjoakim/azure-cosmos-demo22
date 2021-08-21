@@ -776,22 +776,21 @@ Notes:
 
 <table style="width:100%">
   <tr>
-    <td>
+    <td style="width:50%">
       <table>
         <tr>
-          <td>aaa
-          </td>
-          <td>bbb
-          </td>
+          <td><img src="img/usain-bolt-pose.jpeg"></td>
         </tr>
       </table>
     </td>
-    <td>
+    <td style="width:50%">
       <table>
         <tr>
-          <td>ccc
-          </td>
-          <td>ddd
+          <td>
+            <ul>
+              <li> have fun </li>
+              <li> Thank you! </li>
+            </ul>
           </td>
         </tr>
       </table>
