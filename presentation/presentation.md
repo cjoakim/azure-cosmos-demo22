@@ -2,7 +2,8 @@
 
 **CosmosDB - raw data analysis, indexing policies, bulk loading, performance evaluation, and Synapse Link using International Travel Data.**
 
-Chris Joakim | Azure Cosmos DB Global Black Belt | chjoakim@microsoft.com
+- Chris Joakim | Azure Cosmos DB Global Black Belt | chjoakim@microsoft.com
+- https://github.com/cjoakim/azure-cosmos-demo22
 
 ---
 
@@ -191,9 +192,9 @@ $ wc data_wrangling/data/air_travel_departures.json
   930808 46374960 559836434 data_wrangling/data/air_travel_departures.json
 ```
 
-**Awesome, we now have this great dataset!  Should we just load it now into Cosmos?**
+**Awesome, we now have this great dataset!   Should we just load it now into Cosmos?**
 
-<p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
+<p align="center"><img src="img/horizonal-line-1.jpeg" width="95% style="padding-top: 20px;"></p>
 
 <p align="center"><img src="img/John-Heywood-Quote-Look-before-you-leap.jpeg" width="70%"></p>
 
