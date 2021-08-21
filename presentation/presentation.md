@@ -776,7 +776,7 @@ Notes:
 
 <table style="width:100%">
   <tr>
-    <td style="width:50%">
+    <td>
       <tr>
         <td width="50%">
           <p>&nbsp;</p>
@@ -787,7 +787,7 @@ Notes:
           <ul>
             <li> Define your Queries First </li>
             <li> Partition Keys are Critical </li>
-            <li> Know your data BEFORE Loading it </li>
+            <li> Know your data BEFORE Loading it into Cosmos </li>
             <li> Shape your data for your queries, not vice versa </li>
             <li> Indexing to Optimize your Queries </li>
             <li> Composite Indexes to make your Queries fly </li>
