@@ -779,12 +779,19 @@ Notes:
     <td style="width:50%">
       <tr>
         <td width="40%">
+          <p>&nbsp;</p>
           <img src="img/usain-bolt-pose.jpeg"></td>
         <td>
           <ul>
+            <li> Queries First </li>
+            <li> Partition Keys are Critical </li>
+            <li> Know your data BEFORE Loading it </li>
+            <li> Indexing to Optimize your Queries </li>
+            <li> Composite Indexes to make your Queries fly </li>
+            <li> Synapse Link is a great feature - OLAP vs HTAP </li>
             <li> Questions? </li>
-            <li> chjoakim@microsoft.com </li>
             <li> Thank you! </li>
+            <li> chjoakim@microsoft.com </li>
           </ul>
         </td>
       </tr>
