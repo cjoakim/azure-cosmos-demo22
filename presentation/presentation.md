@@ -779,7 +779,7 @@ Notes:
     <td style="width:50%">
       <table>
         <tr>
-          <td><img src="img/usain-bolt-pose.jpeg"></td>
+          <td><img src="img/usain-bolt-pose.jpeg" width="20%"></td>
         </tr>
       </table>
     </td>
