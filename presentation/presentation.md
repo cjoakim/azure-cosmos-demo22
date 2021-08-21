@@ -771,14 +771,13 @@ Notes:
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
 
-### Summary 
+### In Conclusion  
 
-
-<table style="width:100%">
+<table style="width:100%" border=0>
   <tr>
     <td>
       <tr>
-        <td width="50%">
+        <td width="45%">
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
@@ -789,7 +788,7 @@ Notes:
             <li> Partition Keys are Critical </li>
             <li> Know your data BEFORE Loading it into Cosmos </li>
             <li> Shape your data for your queries, not vice versa </li>
-            <li> Indexing to Optimize your Queries </li>
+            <li> Use Indexing to Optimize your Queries </li>
             <li> Composite Indexes to make your Queries fly </li>
             <li> Synapse Link offers "Free ETL" - OLAP vs HTAP </li>
             <li> Look at Pandas, and PySpark too.  Dataframes </li>
