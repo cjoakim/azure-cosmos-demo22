@@ -778,7 +778,8 @@ Notes:
   <tr>
     <td style="width:50%">
       <tr>
-        <td width="40%">
+        <td width="50%">
+          <p>&nbsp;</p>
           <p>&nbsp;</p>
           <img src="img/usain-bolt-pose.jpeg"></td>
         <td>
