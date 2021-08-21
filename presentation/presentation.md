@@ -194,7 +194,7 @@ $ wc data_wrangling/data/air_travel_departures.json
 
 **Awesome, we now have this great dataset!   Should we just load it now into Cosmos?**
 
-<p align="center"><img src="img/horizonal-line-1.jpeg" width="95% style="padding-top: 20px;"></p>
+<p align="center"><img src="img/horizonal-line-1.jpeg" width="95% style="padding-top: 100px;"></p>
 
 <p align="center"><img src="img/John-Heywood-Quote-Look-before-you-leap.jpeg" width="70%"></p>
 
