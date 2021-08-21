@@ -784,17 +784,17 @@ Notes:
           <img src="img/usain-bolt-pose.jpeg"></td>
         <td>
           <ul>
-            <li> **Define your Queries First** </li>
-            <li> Partition Keys are Critical </li>
-            <li> Know your data BEFORE Loading it into Cosmos </li>
-            <li> Shape your data for your queries, not vice versa </li>
-            <li> Use Indexing to Optimize your Queries </li>
-            <li> Composite Indexes to make your Queries fly </li>
-            <li> Synapse Link offers "Free ETL" - OLAP vs HTAP </li>
-            <li> Look at Pandas, and PySpark too.  Dataframes </li>
-            <li> Questions? </li>
-            <li> Thank you! </li>
-            <li> chjoakim@microsoft.com </li>
+            <li> <b> Define your Queries First </b> </li>
+            <li> <b> Partition Keys are Critical </b> </li>
+            <li> <b> Know your data BEFORE Loading it into Cosmos </b> </li>
+            <li> <b> Shape your data for your queries, not vice versa </b> </li>
+            <li> <b> Use Indexing to Optimize your Queries </b> </li>
+            <li> <b> Composite Indexes to make your Queries fly </b> </li>
+            <li> <b> Synapse Link offers "Free ETL" - OLAP vs HTAP </b> </li>
+            <li> <b> Look at Pandas, and PySpark too.  Dataframes </b> </li>
+            <li> <b> Questions? </b> </li>
+            <li> <b> Thank you! </b> </li>
+            <li> <b> chjoakim@microsoft.com </b> </li>
           </ul>
         </td>
       </tr>
