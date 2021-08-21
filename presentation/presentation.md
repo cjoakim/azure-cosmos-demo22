@@ -784,7 +784,7 @@ Notes:
           <img src="img/usain-bolt-pose.jpeg"></td>
         <td>
           <ul>
-            <li> Define your Queries First </li>
+            <li> **Define your Queries First** </li>
             <li> Partition Keys are Critical </li>
             <li> Know your data BEFORE Loading it into Cosmos </li>
             <li> Shape your data for your queries, not vice versa </li>
