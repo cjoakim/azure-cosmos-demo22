@@ -660,6 +660,7 @@ Notes:
 - c3 costs much less RU than c1 due to the composite index on pk/carrier/date
 - c4 costs much more due to non-use of the partition key (/from_iata)
 - Usain Bolt uses composite indices
+- Ask an Olympian - every millisecond (and RU) is critical
 
 <p align="center"><img src="img/usain-bolt-finish-line.jpeg" width="60%"></p>
 
