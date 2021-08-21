@@ -550,7 +550,7 @@ Notes:
 
 #### After Load - Storage By Partition, container c1
 
-<p align="center"><img src="img/storage-by-partition-c1.png" width="90%"></p>
+<p align="center"><img src="img/storage-by-partition-c1.png" width="75%"></p>
 
 ---
 
@@ -659,6 +659,9 @@ q4r	| select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA' and c.date 
 Notes:
 - c3 costs much less RU than c1 due to the composite index on pk/carrier/date
 - c4 costs much more due to non-use of the partition key (/from_iata)
+- Usain Bolt used composite indices
+
+<p align="center"><img src="img/usain-bolt-finish-line.jpeg" width="60%"></p>
 
 ---
 
