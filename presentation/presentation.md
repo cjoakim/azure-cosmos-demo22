@@ -659,7 +659,7 @@ q4r	| select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA' and c.date 
 Notes:
 - c3 costs much less RU than c1 due to the composite index on pk/carrier/date
 - c4 costs much more due to non-use of the partition key (/from_iata)
-- Usain Bolt used composite indices
+- Usain Bolt uses composite indices
 
 <p align="center"><img src="img/usain-bolt-finish-line.jpeg" width="60%"></p>
 
@@ -768,3 +768,33 @@ Notes:
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
+<p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
+
+
+### Summary 
+
+
+<table style="width:100%">
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>aaa
+          </td>
+          <td>bbb
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td>
+      <table>
+        <tr>
+          <td>ccc
+          </td>
+          <td>ddd
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
