@@ -1,0 +1,75 @@
+{
+  "indexingMode": "consistent",
+  "automatic": true,
+  "includedPaths": [
+    {
+      "path": "/pk/?"
+    },
+    {
+      "path": "/route/?"
+    },
+    {
+      "path": "/date/?"
+    },
+    {
+      "path": "/carrier/?"
+    },
+    {
+      "path": "/to_airport_country/?"
+    },
+    {
+      "path": "/from_iata/?"
+    }
+  ],
+  "excludedPaths": [
+    {
+      "path": "/*"
+    }
+  ],
+  "compositeIndexes": [
+    [
+      {
+        "path": "/pk",
+        "order": "ascending"
+      },
+      {
+        "path": "/date",
+        "order": "ascending"
+      }
+    ],
+    [
+      {
+        "path": "/pk",
+        "order": "ascending"
+      },
+      {
+        "path": "/carrier",
+        "order": "ascending"
+      }
+    ],
+    [
+      {
+        "path": "/pk",
+        "order": "ascending"
+      },
+      {
+        "path": "/carrier",
+        "order": "ascending"
+      },
+      {
+        "path": "/date",
+        "order": "ascending"
+      }
+    ],
+    [
+      {
+        "path": "/to_airport_country",
+        "order": "ascending"
+      },
+      {
+        "path": "/from_iata",
+        "order": "ascending"
+      }
+    ]
+  ]
+}

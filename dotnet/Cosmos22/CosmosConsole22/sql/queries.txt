@@ -1,0 +1,34 @@
+q1	The travel from a given US airport to Foreign airport (by airport codes)
+q2	Same as q1, but within a given timeframe
+q3	The travel from a given US airport to Foreign airport, on a a given Carrier
+q4	Same as 3, but within a given timeframe
+q5	Travel to a given Country from all US airports
+q6	Travel to a given Country from selected US airports
+q7	Query by Id and Partition Key (i.e. - "Point Read")
+q8	Query by either from_airport or to_airport by GPS coordinates (future)
+
+===
+
+q0	| c1,c3,c4 | SELECT COUNT(1) FROM c
+
+q1	| c1,c3    | select * from c where c.pk = 'MIA:EZE'
+q1l | c1,c3    | select * from c where c.pk = 'MIA:EZE' offset 0 limit 5
+q1r	| c4       | select * from c where c.route = 'MIA:EZE'
+
+q2	| c1,c3    | select * from c where c.pk = 'CLT:MBJ' and c.date >= '2004/01/01' and c.date <= '2018/02/01'
+q2r	| c4       | select * from c where c.route = 'CLT:MBJ' and c.date >= '2004/01/01' and c.date <= '2018/02/01'
+
+q3	| c1,c3    | select * from c where c.pk = 'CLT:MBJ' and c.carrier = 'AA'
+q3r	| c4       | select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA'
+
+q4	| c1,c3    | select * from c where c.pk = 'CLT:MBJ' and c.carrier = 'AA' and c.date >= '2004/01/01' and c.date <= '2018/02/01'
+q4r	| c4       | select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA' and c.date >= '2004/01/01' and c.date <= '2018/02/01'
+
+q5	| c1,c3,c4 | select * from c where c.to_airport_country = 'Jamaica'
+
+q6	| c1,c3,c4 | select * from c where c.to_airport_country = 'Jamaica' and c.from_iata in ('MIA','RDU')
+
+q7	| c1       | select * from c where c.id = 'eb48ff62-e0c6-453f-9752-850307b69d78' and c.pk = 'CLT:MBJ'
+q7	| c2       | select * from c where c.id = 'b0f94dae-dd47-400e-ade6-3c4a0dcff5be' and c.pk = 'MIA:KIN'
+
+q8	| c1,c3,c4 | select * from c WHERE ST_DISTANCE(c.to_location, {'type': 'Point', 'coordinates': [-77.6257501434915, 18.392185491360866]}) <= 40000 offset 0 limit 1
