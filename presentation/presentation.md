@@ -777,23 +777,16 @@ Notes:
 <table style="width:100%">
   <tr>
     <td style="width:50%">
-      <table>
-        <tr>
-          <td><img src="img/usain-bolt-pose.jpeg" width="20%"></td>
-        </tr>
-      </table>
-    </td>
-    <td style="width:50%">
-      <table>
-        <tr>
-          <td>
-            <ul>
-              <li> have fun </li>
-              <li> Thank you! </li>
-            </ul>
-          </td>
-        </tr>
-      </table>
+      <tr>
+        <td><img src="img/usain-bolt-pose.jpeg" width="20%"></td>
+        <td>
+          <ul>
+            <li> Questions? </li>
+            <li> chjoakim@microsoft.com </li>
+            <li> Thank you! </li>
+          </ul>
+        </td>
+      </tr>
     </td>
   </tr>
 </table>
