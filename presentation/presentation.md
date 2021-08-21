@@ -777,7 +777,8 @@ Notes:
   <tr>
     <td>
       <tr>
-        <td width="45%">
+        <td width="55%">
+          <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
           <p>&nbsp;</p>
