@@ -193,6 +193,10 @@ $ wc data_wrangling/data/air_travel_departures.json
   930808 46374960 559836434 data_wrangling/data/air_travel_departures.json
 ```
 
+<p align="center">
+
+</p>
+
 <p align="center"><img src="img/awesome-load-it.png" width="80%></p>
 
 <p align="center"><img src="img/spacer-50.png" width="50%></p>
