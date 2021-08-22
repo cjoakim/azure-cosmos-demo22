@@ -1,6 +1,6 @@
 # azure-cosmos-demo22
 
-<p align="center"><img src="img/cover-image.png" width="99%"></p>
+<p align="center"><img src="presentation/img/cover-image.png" width="99%"></p>
 
 - [Presentation](presentation/presentation.md)
 
