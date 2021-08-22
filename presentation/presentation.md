@@ -199,7 +199,7 @@ $ wc data_wrangling/data/air_travel_departures.json
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%></p>
 
-<p align="center"><img src="img/John-Heywood-Quote-Look-before-you-leap.jpeg" width="70%"></p>
+<p align="center"><img src="img/false-start.png" width="70%"></p>
 
 ### 3. Explore the data BEFORE loading it into CosmosDB
 
