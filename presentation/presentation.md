@@ -41,6 +41,8 @@
 - The choice of the **partition key** for each container is critical
 - Optimize queries with **indexing**, including **composite indexes**
 
+<p align="center"><img src="img/partitions1.png" width="80%"></p>
+
 #### The Data -  U.S. International Air Traffic
 
 - **Kaggle dataset on U.S. International Air Traffic data (1990-2020)**
