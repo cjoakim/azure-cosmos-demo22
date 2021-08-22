@@ -1,4 +1,3 @@
-# azure-cosmos-demo22
 
 <p align="center"><img src="img/cover-image.png" width="99%"></p>
 
