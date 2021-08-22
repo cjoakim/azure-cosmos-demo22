@@ -559,13 +559,14 @@ Notes:
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
-<p align="center"><img src="img/CosmosQueryUtil.png" width="75%"></p>
+<p align="center"><img src="img/CosmosQueryUtil.png" width="99%"></p>
 
 ### 6. Execute Cosmos/SQL Queries vs the Containers, Evaluate
 
 - https://docs.microsoft.com/en-us/azure/cosmos-db/troubleshoot-query-performance
 - https://docs.microsoft.com/en-us/azure/cosmos-db/query-cheat-sheet
 - https://docs.microsoft.com/en-us/azure/cosmos-db/working-with-dates
+- The C# code is in directory dotnet/Cosmos22/CosmosConsole22/
 
 #### Query 0
 
@@ -776,35 +777,4 @@ Notes:
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
-
-### In Conclusion  
-
-<table style="width:100%" border=0>
-  <tr>
-    <td>
-      <tr>
-        <td width="55%">
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
-          <img src="img/usain-bolt-pose.jpeg"></td>
-        <td>
-          <ul>
-            <li> <b> Define your Queries First </b> </li>
-            <li> <b> Partition Keys are Critical </b> </li>
-            <li> <b> Know your data BEFORE Loading it into Cosmos </b> </li>
-            <li> <b> Shape your data for your queries, not vice versa </b> </li>
-            <li> <b> Use Indexing to Optimize your Queries </b> </li>
-            <li> <b> Composite Indexes to make your Queries fly </b> </li>
-            <li> <b> Synapse Link offers "Free ETL" - OLAP vs HTAP </b> </li>
-            <li> <b> Look at Pandas, and PySpark too.  Dataframes </b> </li>
-            <li> <b> Questions? </b> </li>
-            <li> <b> Thank you! </b> </li>
-            <li> <b> chjoakim@microsoft.com </b> </li>
-          </ul>
-        </td>
-      </tr>
-    </td>
-  </tr>
-</table>
+<p align="center"><img src="img/in-conclusion.png" width="100%"></p>
