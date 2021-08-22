@@ -485,7 +485,7 @@ See the az/ and az/indexing_policies/ directories of this repo.
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
-<p align="center"><img src="img/bulk-load.png" width="50%></p>
+<p align="center"><img src="img/bulk-load.png" width="80%"></p>
 
 ### 5. Bulk Load the Same Data into the CosmosDB containers
 
