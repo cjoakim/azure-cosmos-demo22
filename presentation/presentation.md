@@ -23,7 +23,7 @@
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
-<p align="center"><img src="img/start-here.jpeg" width="50%"></p>
+<p align="center"><img src="img/start.png" width="80%"></p>
 
 
 ### 1. Identify the Queries
