@@ -68,11 +68,12 @@ These are ranked by the presumed importance and volume in the system.
 
 - [What is the CQRS pattern?](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
 - A pattern that separates read and update operations for a data store.
-- Using CQRS is useful to identify your database operations.
+- Using CQRS is useful to identify your database operations
+- Give names to your operations/queries, such as q1, q2, etc
 
 #### Don't Start Here - with what your Current Data Looks Like
 
-<p align="center"><img src="img/AdventureWorksLT-ERD.png" width="40%"></p>
+<p align="center"><img src="img/AdventureWorksLT-ERD.png" width="60%"></p>
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
@@ -166,13 +167,13 @@ def from_airport_name(row):
         return 'NA'
 ```
 
-**Data & AI folks, please learn/explore [Pandas](https://pandas.pydata.org/)!**
+**Data & AI folks, please explore and learn [Pandas](https://pandas.pydata.org/)!**
 
-<p align="center"><img src="img/satya-learning-2.jpeg" width="60%"></p>
+<p align="center"><img src="img/satya-learning-2.jpeg" width="70%"></p>
 
 #### The merged/enriched data in in CSV format
 
-- see data_wrangling/data/**air_travel_departures.csv**
+- see data_wrangling/data/**air_travel_departures.csv** (in air_travel_departures.csv.zip)
 - **this CSV data will become CosmosDB documents** in the DotNet Loader process
 
 ```
@@ -185,12 +186,14 @@ date|year|month|from_iata|to_iata|airlineid|carrier|count|route|from_airport_nam
 
 #### The CSV is for Exploration, a similar JSON file is for Loading into CosmosDB
 
+- see data_wrangling/data/**air_travel_departures.json** (in air_travel_departures.json.zip)
+
 ```
 $ wc data_wrangling/data/air_travel_departures.json
   930808 46374960 559836434 data_wrangling/data/air_travel_departures.json
 ```
 
-**Awesome, we now have this great dataset!   Should we just load it now into Cosmos?**
+#### Awesome, we now have this great dataset!   Should we just load it now into Cosmos?
 
 <p align="center"><img src="img/spacer-50.png" width="50%></p>
 
