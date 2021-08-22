@@ -231,6 +231,7 @@ $ wc data_wrangling/data/air_travel_departures.json
 - **Each of these containers will be loaded with the same data**
 - Partition Key and Indexing can impact both loading and query performance
 - **pk** attribute to make the container "future-proof"
+- **Let's evaluate the four and identify the best performing one**
 
 #### Containers
 
@@ -588,9 +589,9 @@ SELECT COUNT(1) FROM c
 | q0    | demo22 |  c4 |   17.360 | 1     | OK |
 
 Notes:
-- Results comparable as expected
-- each returned a count of 930,808
-- container c2, with no indexing, only supports "point reads"
+- Results are comparable as expected
+- each returned a count of **930,808**
+- **container c2, with no indexing, only supports "point reads"**
 
 ---
 
@@ -632,7 +633,7 @@ q2r | select * from c where c.route = 'CLT:MBJ' and c.date >= '2004/01/01' and c
 
 Notes:
 - c3 costs less RU than c1 due to the composite index on pk/date
-- c4 costs much more due to non-use of the partition key (/from_iata)
+- **c4 costs much more due to non-use of the partition key (/from_iata)**
 
 ---
 
@@ -651,7 +652,7 @@ q3r | select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA'
 
 Notes:
 - c3 costs less RU than c1 due to the composite index on pk/carrier
-- c4 costs much more due to non-use of the partition key (/from_iata)
+- **c4 costs much more due to non-use of the partition key (/from_iata)**
 
 ---
 
@@ -672,7 +673,7 @@ q4r	| select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA' and c.date 
 Notes:
 - c3 costs much less RU than c1 due to the composite index on pk/carrier/date
 - c4 costs much more due to non-use of the partition key (/from_iata)
-- Usain Bolt uses composite indices
+- **Usain Bolt uses composite indices**  4.13 vs 6.05
 - Ask an Olympian - every millisecond (and RU) is critical
 
 <p align="center"><img src="img/usain-bolt-finish-line.jpeg" width="80%"></p>
@@ -693,6 +694,7 @@ select * from c where c.to_airport_country = 'Jamaica'
 
 Notes:
 - similar results for all containers, all have index on to_airport_country
+- high RU due to not being very selective, 16806 returned documents
 
 ---
 
@@ -718,7 +720,6 @@ Notes:
 ```
 q7 c1 | select * from c where c.id = 'eb48ff62-e0c6-453f-9752-850307b69d78' and c.pk = 'CLT:MBJ'
 q7 c2 | select * from c where c.id = 'b0f94dae-dd47-400e-ade6-3c4a0dcff5be' and c.pk = 'MIA:KIN'
-
 ```
 
 | Query | DB     | Ctr | RU       | Items | Status |
