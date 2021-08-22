@@ -59,10 +59,7 @@ namespace CosmosConsole22{
                     Console.WriteLine($"ExecuteQuery - sql: {sql}");
                 }
                 QueryDefinition qDef = new QueryDefinition(sql);
-                QueryRequestOptions qOpts = new QueryRequestOptions()
-                {
-                    MaxItemCount = 100
-                };      
+                QueryRequestOptions qOpts = new QueryRequestOptions();      
                 FeedIterator<dynamic> qIter = 
                     this.currentContainer.GetItemQueryIterator<dynamic>(
                         qDef, requestOptions: qOpts);

@@ -559,6 +559,8 @@ Notes:
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
+<p align="center"><img src="img/CosmosQueryUtil.png" width="75%"></p>
+
 ### 6. Execute Cosmos/SQL Queries vs the Containers, Evaluate
 
 - https://docs.microsoft.com/en-us/azure/cosmos-db/troubleshoot-query-performance
@@ -665,7 +667,7 @@ Notes:
 - Usain Bolt uses composite indices
 - Ask an Olympian - every millisecond (and RU) is critical
 
-<p align="center"><img src="img/usain-bolt-finish-line.jpeg" width="60%"></p>
+<p align="center"><img src="img/usain-bolt-finish-line.jpeg" width="80%"></p>
 
 ---
 
