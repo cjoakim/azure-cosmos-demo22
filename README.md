@@ -1,6 +1,6 @@
 # azure-cosmos-demo22
 
-**CosmosDB - raw data analysis, indexing policies, bulk loading, performance evaluation, and Synapse Link using International Travel Data.**
+<p align="center"><img src="img/cover-image.png" width="99%"></p>
 
 - [Presentation](presentation/presentation.md)
 

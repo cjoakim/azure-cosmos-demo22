@@ -775,6 +775,4 @@ Notes:
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
-<p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
-
 <p align="center"><img src="img/in-conclusion.png" width="100%"></p>
