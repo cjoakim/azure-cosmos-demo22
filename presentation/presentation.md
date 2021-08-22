@@ -11,7 +11,7 @@
 
 ### 3. Explore the data BEFORE loading it into CosmosDB
 
-### 4. Create Similar CosmosDB containers with different Indexing
+### 4. Create Four Similar CosmosDB containers with different Indexing/Partitioning
 
 ### 5. Bulk Load the Same Data into the CosmosDB containers
 
@@ -67,9 +67,9 @@ These are ranked by the presumed importance and volume in the system.
 #### CQRS - Command and Query Responsibility Segregation
 
 - [What is the CQRS pattern?](https://docs.microsoft.com/en-us/azure/architecture/patterns/cqrs)
-- A pattern that separates read and update operations for a data store.
+- A pattern that separates read and update operations for a data store
 - Using CQRS is useful to identify your database operations
-- Give names to your operations/queries, such as q1, q2, etc
+- **Give names to your operations/queries, such as q1, q2, etc**
 
 #### Don't Start Here - with what your Current Data Looks Like
 
@@ -132,9 +132,9 @@ Example JSON document from OpenFlights CSV data:
 
 #### Merge and Enrich - Joining on Airport Code (IATA Code)
 
-- using the ** python pandas library** to combine these datasets
+- using the **python pandas library** to combine these datasets
 - merged the Openflights Airport data (**Name, GPS, Country**) into the Kaggle Travel data
-- made the dates sortable
+- transformed the dates into sortable yyyy/mm/dd format
 
 ```python
 # warning: this is partial code, see main.py in the repo for the actual code
@@ -143,8 +143,10 @@ import pandas as pd
 
 def wrangle_departures():
     df = pd.read_csv(infile, delimiter=",")
+    # add columns to the dataframe, with the Openflights data
     df['route'] = df.apply(lambda row: route_column(row), axis=1)
     df['from_airport_name'] = df.apply(lambda row: from_airport_name(row), axis=1)
+    # drop and rename columns
     df2 = df.drop(drop_cols, axis=1).drop_duplicates()
     df3 = df2.rename(columns={
         "data_dte": "date", 
@@ -220,10 +222,11 @@ $ wc data_wrangling/data/air_travel_departures.json
 
 <p align="center"><img src="img/synapse-csv-analysis-2.png" width="90%"></p>
 
-
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
-### 4. Create Similar CosmosDB containers with different Indexing
+<p align="center"><img src="img/four-sprinters.jpg" width="90%"></p>
+
+### 4. Create Four Similar CosmosDB containers with different Indexing/Partitioning
 
 - **Each of these containers will be loaded with the same data**
 - Partition Key and Indexing can impact both loading and query performance
@@ -771,6 +774,8 @@ Notes:
 ```
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
+
+<p align="center"><img src="img/synapse-analytics-cosmos-db-architecture.png" width="95%"></p>
 
 ### 7. Demonstrate Synapse Link, and PySpark Queries of the Synapse Link Data
 
