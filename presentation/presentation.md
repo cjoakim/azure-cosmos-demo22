@@ -1,9 +1,6 @@
 # azure-cosmos-demo22
 
-**CosmosDB - raw data analysis, indexing policies, bulk loading, performance evaluation, and Synapse Link using International Travel Data.**
-
-- Chris Joakim | Azure Cosmos DB Global Black Belt | chjoakim@microsoft.com
-- https://github.com/cjoakim/azure-cosmos-demo22
+<p align="center"><img src="img/cover-image.png" width="99%"></p>
 
 ---
 
