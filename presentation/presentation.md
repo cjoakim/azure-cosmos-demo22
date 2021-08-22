@@ -81,7 +81,7 @@ These are ranked by the presumed importance and volume in the system.
 
 ### 2. Explore and Merge the Datasets
 
-- [U.S. International Air Traffic data (1990-2020)](https://www.kaggle.com/parulpandey/us-international-air-traffic-data)
+- [Kaggle - U.S. International Air Traffic data (1990-2020)](https://www.kaggle.com/parulpandey/us-international-air-traffic-data)
   - data on travel from US Airports to Foreign Airports
 
 CSV Line:
@@ -132,7 +132,7 @@ Example JSON document from OpenFlights CSV data:
 
 #### Merge and Enrich - Joining on Airport Code (IATA Code)
 
-- using python/pandas to combine these datasets
+- using the ** python pandas library** to combine these datasets
 - merged the Openflights Airport data (**Name, GPS, Country**) into the Kaggle Travel data
 - made the dates sortable
 
@@ -167,7 +167,7 @@ def from_airport_name(row):
         return 'NA'
 ```
 
-**Data & AI folks, please explore and learn [Pandas](https://pandas.pydata.org/)!**
+**Data & AI folks, please explore and learn [Pandas](https://pandas.pydata.org/)!**.  Be insatiably curious.  It's practical, too.
 
 <p align="center"><img src="img/satya-learning-2.jpeg" width="70%"></p>
 
@@ -193,7 +193,7 @@ $ wc data_wrangling/data/air_travel_departures.json
   930808 46374960 559836434 data_wrangling/data/air_travel_departures.json
 ```
 
-#### Awesome, we now have this great dataset!   Should we just load it now into Cosmos?
+<p align="center"><img src="img/awesome-load-it.png" width="80%></p>
 
 <p align="center"><img src="img/spacer-50.png" width="50%></p>
 
