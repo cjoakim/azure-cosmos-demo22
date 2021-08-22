@@ -632,7 +632,7 @@ q2r | select * from c where c.route = 'CLT:MBJ' and c.date >= '2004/01/01' and c
 | q2r   | demo22 |  c4 |   29.300 | 180   | OK |
 
 Notes:
-- c3 costs less RU than c1 due to the composite index on pk/date
+- c3 costs less RU than c1 due to the **composite index on pk/date**
 - **c4 costs much more due to non-use of the partition key (/from_iata)**
 
 ---
@@ -651,7 +651,7 @@ q3r | select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA'
 | q3r   | demo22 |  c4 |   19.110 | 57    | OK |
 
 Notes:
-- c3 costs less RU than c1 due to the composite index on pk/carrier
+- c3 costs less RU than c1 due to the **composite index on pk/carrier**
 - **c4 costs much more due to non-use of the partition key (/from_iata)**
 
 ---
@@ -661,7 +661,6 @@ Notes:
 ```
 q4	| select * from c where c.pk = 'CLT:MBJ' and c.carrier = 'AA' and c.date >= '2004/01/01' and c.date <= '2018/02/01'
 q4r	| select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA' and c.date >= '2004/01/01' and c.date <= '2018/02/01'
-
 ```
 
 | Query | DB     | Ctr | RU       | Items | Status |
@@ -671,7 +670,7 @@ q4r	| select * from c where c.route = 'CLT:MBJ' and c.carrier = 'AA' and c.date 
 | q4r   | demo22 |  c4 |   18.960 | 32    | OK |
 
 Notes:
-- c3 costs much less RU than c1 due to the composite index on pk/carrier/date
+- c3 costs much less RU than c1 due to the **composite index on pk/carrier/date**
 - c4 costs much more due to non-use of the partition key (/from_iata)
 - **Usain Bolt uses composite indices**  4.13 vs 6.05
 - Ask an Olympian - every millisecond (and RU) is critical
