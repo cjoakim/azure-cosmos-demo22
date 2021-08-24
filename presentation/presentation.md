@@ -782,6 +782,8 @@ Notes:
 - https://github.com/Azure-Samples/Synapse/tree/main/Notebooks/PySpark/Synapse%20Link%20for%20Cosmos%20DB%20samples
 - https://sparkbyexamples.com/pyspark/pyspark-structtype-and-structfield/
 
+<p align="center"><img src="img/pyspark-synapse-link-notebook.png" width="99%"></p>
+
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
 <p align="center"><img src="img/in-conclusion.png" width="100%"></p>
