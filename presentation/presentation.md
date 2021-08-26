@@ -19,8 +19,6 @@
 
 ### 7. Demonstrate Synapse Link, and PySpark Queries of the Synapse Link Data
 
-### 8. Demonstrate Log Analytics/Azure Monitor Kusto queries
-
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
 <p align="center"><img src="img/start.png" width="80%"></p>

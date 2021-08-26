@@ -19,8 +19,6 @@
 
 ### 7. Demonstrate Synapse Link, and PySpark Queries of the Synapse Link Data
 
-### 8. Demonstrate Log Analytics/Azure Monitor Kusto queries
-
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
 <p align="center"><img src="img/start.png" width="80%"></p>
@@ -781,6 +779,8 @@ Notes:
 
 - https://github.com/Azure-Samples/Synapse/tree/main/Notebooks/PySpark/Synapse%20Link%20for%20Cosmos%20DB%20samples
 - https://sparkbyexamples.com/pyspark/pyspark-structtype-and-structfield/
+
+<p align="center"><img src="img/pyspark-synapse-link-notebook.png" width="99%"></p>
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
