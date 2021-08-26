@@ -56,7 +56,7 @@ These are ranked by the presumed importance and volume in the system.
 | q1   | The travel from a given US airport to Foreign airport (by airport codes)     |
 | q2   | Same as q1, but within a given timeframe                                     |
 | q3   | The travel from a given US airport to Foreign airport, on a a given Carrier  |
-| q4   | Same as 3, but within a given timeframe                                      |
+| q4   | Same as q3, but within a given timeframe                                      |
 | q5   | Travel to a given Country from all US airports                               |
 | q6   | Travel to a given Country from selected US airports                          |
 | q7   | Query by Id and Partition Key (i.e. - "Point Read")                          |
