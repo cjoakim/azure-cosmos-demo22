@@ -1,5 +1,6 @@
 Faker
 arrow
 docopt
+matplotlib
 pandas
 requests

@@ -30,8 +30,6 @@ from decimal import *
 from docopt import docopt
 from faker import Faker
 
-# Chris Joakim, Microsoft, August 2021
-
 world_airports_dict = dict()
 
 
