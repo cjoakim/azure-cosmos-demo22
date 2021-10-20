@@ -69,7 +69,9 @@ These are ranked by the presumed importance and volume in the system.
 - Using CQRS is useful to identify your database operations
 - **Give names to your operations/queries, such as q1, q2, etc**
 
-#### Don't Start Here - with what your Current Data Looks Like
+#### Don't Start Here ... with what your Current Data Looks Like
+
+...because it should be stored in CosmosDB in a significantly different design.
 
 <p align="center"><img src="img/AdventureWorksLT-ERD.png" width="60%"></p>
 
