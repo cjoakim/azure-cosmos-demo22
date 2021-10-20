@@ -11,7 +11,7 @@ export container4="c4"
 export pk1="/pk"
 export pk2="/from_iata"
 
-export sleep_seconds="10"
+export sleep_seconds="30"
 
 export air_travel_departures_file="data_wrangling/data/air_travel_departures.json"
 

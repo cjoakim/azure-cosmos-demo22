@@ -15,6 +15,10 @@ echo 'create database: '$dbname
 dotnet run create_database $dbname $shared_ru
 
 echo '---'
+echo 'sleeping after create database: '$sleep_seconds
+sleep sleep_seconds
+
+echo '---'
 echo 'create container: '$container1
 dotnet run create_container $dbname $container1 $pk1 0
 

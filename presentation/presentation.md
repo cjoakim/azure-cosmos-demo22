@@ -7,17 +7,31 @@
 
 ### 1. Identify the Queries
 
+- CQRS
+
 ### 2. Explore and Merge the Datasets
+
+- Data Wrangling with Python and Pandas
 
 ### 3. Explore the data BEFORE loading it into CosmosDB
 
+- PySpark
+
 ### 4. Create Four Similar CosmosDB containers with different Indexing/Partitioning
+
+- Implement four indexing strategies
 
 ### 5. Bulk Load the Same Data into the CosmosDB containers
 
+- Load the four containers
+
 ### 6. Execute Cosmos/SQL Queries vs the Containers, Evaluate
 
+- Determine the best of the four candidates
+
 ### 7. Demonstrate Synapse Link, and PySpark Queries of the Synapse Link Data
+
+- Refer to another GitHub repo: https://github.com/cjoakim/azure-cosmosdb-synapse-link
 
 <p align="center"><img src="img/horizonal-line-1.jpeg" width="95%"></p>
 
@@ -778,6 +792,8 @@ Notes:
 <p align="center"><img src="img/synapse-analytics-cosmos-db-architecture.png" width="95%"></p>
 
 ### 7. Demonstrate Synapse Link, and PySpark Queries of the Synapse Link Data
+
+- See my Synapse Link demo here: https://github.com/cjoakim/azure-cosmosdb-synapse-link
 
 - https://github.com/Azure-Samples/Synapse/tree/main/Notebooks/PySpark/Synapse%20Link%20for%20Cosmos%20DB%20samples
 - https://sparkbyexamples.com/pyspark/pyspark-structtype-and-structfield/
