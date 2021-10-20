@@ -5,7 +5,7 @@
 
 ## Table of Contents
 
-### 0. Purpose of this Presentation?
+### 0. What's the Purpose of this Presentation?
 
 - **CosmosDB Design** example
 - **CosmosDB Indexing** deep-dive 
@@ -154,6 +154,7 @@ Example JSON document from OpenFlights CSV data:
 
 #### Merge and Enrich - Joining on Airport Code (IATA Code)
 
+- [TIOBE Index for October 2021, Python now #1](https://www.tiobe.com/tiobe-index/)
 - using the **python pandas library** to combine these datasets
 - merged the Openflights Airport data (**Name, GPS, Country**) into the Kaggle Travel data
 - transformed the dates into sortable yyyy/mm/dd format
@@ -191,7 +192,7 @@ def from_airport_name(row):
         return 'NA'
 ```
 
-**Data & AI folks, please explore and learn [Pandas](https://pandas.pydata.org/)!**.  Be insatiably curious.  It's practical, too.
+**Data & AI folks, please explore and learn [Pandas](https://pandas.pydata.org/)!**.  Be insatiably curious.  It's practical, too.  And a foundation for Spark.
 
 <p align="center"><img src="img/satya-learning-2.jpeg" width="70%"></p>
 
@@ -234,7 +235,8 @@ $ wc data_wrangling/data/air_travel_departures.json
 - Identify both good and poor **partition key** attributes
 - **Upload the CSV file to Azure Blob Storage**
 - Use a **PySpark Notebook in Synapse Analytics** to analyze the data
-- see file synapse/pyspark/**departures_analysis.ipynb**
+- See file synapse/pyspark/**departures_analysis.ipynb**
+- Warning: your data may not be like you think it is!
 
 #### Demonstrate the PySpark Notebook in Synapse
 
@@ -251,7 +253,7 @@ $ wc data_wrangling/data/air_travel_departures.json
 ### 4. Create Four Similar CosmosDB containers with different Indexing/Partitioning
 
 - **Each of these containers will be loaded with the same data**
-- Partition Key and Indexing can impact both loading and query performance
+- **Partition Key and Indexing** can impact both loading and query performance
 - **pk** attribute to make the container "future-proof"
 - **Let's evaluate the four and identify the best performing one**
 
@@ -636,7 +638,7 @@ q1r | select * from c where c.route = 'MIA:EZE'
 Notes:
 - c4 has a partition key of "/from_iata"
 - notice the offset/limit clause
-- c4 RU cost is 8.0% higher to get the same 2613 documents
+- c4 RU cost is **8.0% higher** to get the same 2613 documents
 
 ---
 
@@ -749,6 +751,7 @@ q7 c2 | select * from c where c.id = 'b0f94dae-dd47-400e-ade6-3c4a0dcff5be' and 
 | q7    | demo22 |  c2 |    2.830 | 1     | OK |
 
 Notes:
+- c2 is the container with no indexing
 - Results very similar despite minimal no-indexing on c2 for point reads
 
 ---
