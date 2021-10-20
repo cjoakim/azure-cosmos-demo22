@@ -5,15 +5,23 @@
 
 ## Table of Contents
 
+### 0. Purpose of this Presentation?
+
+- **CosmosDB Design** example
+- **CosmosDB Indexing** deep-dive 
+- Inro to **Python and Pandas**, practical foundation for **PySpark and Spark (in Synapse)**
+- Into to **HTAP** (Hybrid Transactional and Analytical Processing) with Synapse and **Synapse Link**
+- Working examples/repos for your reference
+
 ### 1. Identify the Queries
 
-- CQRS
+- Query-Driven-Design with CQRS
 
 ### 2. Explore and Merge the Datasets
 
 - Data Wrangling with Python and Pandas
 
-### 3. Explore the data BEFORE loading it into CosmosDB
+### 3. Explore and Visualize the data BEFORE loading it into CosmosDB
 
 - PySpark
 
